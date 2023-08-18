@@ -41,7 +41,8 @@
     "test": "nyc mocha --expose-gc",
     "install": "node-gyp-build",
     "prebuild-napi-x64": "prebuild -t 3 -r napi -a x64 --strip",
-    "prebuild-napi-ia32": "prebuild -t 3 -r napi -a ia32 --strip"
+    "prebuild-napi-ia32": "prebuild -t 3 -r napi -a ia32 --strip",
+    "upload": "prebuild --upload"
   },
   "dependencies": {
     "debug": "^4.1.1",
@@ -67,5 +68,11 @@
   "config": {
     "runtime": "napi",
     "target": 3
-  }
+  },
+  "files": [
+    "lib",
+    "include",
+    "docs",
+    "binding.gyp"
+  ]
 }
