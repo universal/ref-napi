@@ -58,5 +58,14 @@
     "nyc": "^15.0.0",
     "prebuild": "^11.0.4",
     "weak-napi": "^2.0.0"
+  },
+  "binary": {
+    "napi_versions": [
+      3
+    ]
+  },
+  "config": {
+    "runtime": "napi",
+    "target": 3
   }
 }
